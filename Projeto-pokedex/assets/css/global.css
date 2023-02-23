@@ -1,10 +1,32 @@
 @charset "UTF-8";
 
 * {
-    font-family: 'Roboto', 'sans-serif'
+    font-family: 'Roboto', 'sans-serif';
+    box-sizing: border-box
 }
 
-h1 {
-    color : red;
-    text-align: center;
+body {
+    background-color: #f6f8fc;
+}
+
+.content {
+    padding: 1rem;
+    background-color: #fff;
+    height: 100vh;
+}
+
+@media screen and (min-width: 576px) {
+    .content {
+        max-width: 576px;
+        margin: 1rem auto;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        margin: 1rem auto;
+        height: auto;
+    }
 }
